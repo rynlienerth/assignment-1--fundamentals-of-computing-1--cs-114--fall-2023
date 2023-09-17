@@ -1,46 +1,46 @@
 // Import libraries here
+import java.util.Scanner;
 
-public class BlockLetters {
+//start of the letters step 1
+
+public class Assignment1 {
  
-  public static void printBlockLetterK() {
-   String[] letterK = { 
-  "KK        KK",
-  "KK      KK",
-  "KK"   KK",
-  "KK   KK",
-  "KK KK",
-  "KKKK",
-  "KK KK",
-  "KK   KK", 
-  "KK"   KK",
-  "KK      KK",
-  "KK        KK",
+  public static void printBlockLetterKL() {
+   String[] letterKL = { 
+ 
+  "KK      KK   LL            ",
+  "KK    KK     LL            ",
+  "KK   KK      LL            ",
+  "KK KK        LL            ",
+  "KKKK         LL            ",
+  "KK KK        LL            ",
+  "KK   KK      LL            ", 
+  "KK    KK     LL            ",
+  "KK      KK   LL            ",
+  "KK        KK LLLLLLLLLLLLLL",
   };
-  for (String line : letterK) {
-    Syste,.out.println(line);
+  for (String line : letterKL) {
+    System.out.println(line);
 }
   }
-
-
-  public static void printBlockLetterL() {
-    String[] letterL = {
-      "LL",
-      "LL",
-      "LL",
-      "LL",
-      "LL",
-      "LL",
-      "LL",
-      "LL""LL""LL",
-    };
-    for (String line : letterL) {
-      System.out.println(line);
-    }
-  }
-    public static void main(String[] args){
-      printBlockLetterK();
-      System.out.println();
-      printBlockLetterL();
-    }
-
+      
     
+  
+
+//Start of step 2 Temperature Conversions
+
+  public static void main(String[] args) {
+    Scanner scanner = new Scanner(System.in);
+    
+    System.out.println("Enter temperature in Fahrenheit: ");
+    double fahrenheit = scanner.nextDouble();
+
+    double celsius = (fahrenheit - 32) * 5 / 9;
+
+    printBlockLetterKL(); 
+    System.out.println(fahrenheit + " degrees Fahrenheit is equal to " + celsius + " degrees Celsius.");
+  }
+}
+
+
+//Start of step 3 
