@@ -29,27 +29,28 @@ public class Assignment1 {
 //Start of step 2 Temperature Conversions
 
   public static void main(String[] args) {
-    Scanner scanner = new Scanner(System.in);
     
-    System.out.println("Enter temperature in Fahrenheit: ");
-    double fahrenheit = scanner.nextDouble();
-    System.out.println("Enter a 5-character string: ");
+    try (Scanner scanner = new Scanner(System.in)) {
+      System.out.println("Enter temperature in Fahrenheit: ");
+      double fahrenheit = scanner.nextDouble();
+      System.out.println("Enter a 5-character string: ");
 String inputString = scanner.next();
-    double celsius = (fahrenheit - 32) * 5 / 9;
+      double celsius = (fahrenheit - 32) * 5 / 9;
 
-    printBlockLetterKL(); 
-    System.out.println(fahrenheit + " degrees Fahrenheit is equal to " + celsius + " degrees Celsius.");
-  
-    // Step 3 Trimmed Reverse String
-    
+      printBlockLetterKL(); 
+      System.out.println(fahrenheit + " degrees Fahrenheit is equal to " + celsius + " degrees Celsius.");
+ 
+      // Step 3 Trimmed Reverse String
+      
 
-  if (inputString.length() != 5) {
-    System.out.println("Error: Please enter a 5-character string.");
-    return;
-  }
-  String trimmedReversedString = new StringBuilder(inputString.substring(1,4)).reverse().toString();
+ if (inputString.length() != 5) {
+      System.out.println("Error: Please enter a 5-character string.");
+      return;
+ }
+ String trimmedReversedString = new StringBuilder(inputString.substring(1,4)).reverse().toString();
 
-  System.out.println("Result: " + trimmedReversedString);
+ System.out.println("Result: " + trimmedReversedString);
+    }
   }
 }
 
