@@ -1,4 +1,5 @@
 // Import libraries here
+import java.util.Random;
 import java.util.Scanner;
 
 //start of the letters step 1
@@ -38,10 +39,10 @@ String inputString = scanner.next();
       double celsius = (fahrenheit - 32) * 5 / 9;
 
       printBlockLetterKL(); 
-      System.out.println(fahrenheit + " degrees Fahrenheit is equal to " + celsius + " degrees Celsius.");
+      System.out.println("Temperature Conversion: " + fahrenheit + " degrees Fahrenheit is equal to " + celsius + " degrees Celsius.");
  
       // Step 3 Trimmed Reverse String
-      
+  
 
  if (inputString.length() != 5) {
       System.out.println("Error: Please enter a 5-character string.");
@@ -50,7 +51,15 @@ String inputString = scanner.next();
  String trimmedReversedString = new StringBuilder(inputString.substring(1,4)).reverse().toString();
 
  System.out.println("Result: " + trimmedReversedString);
-    }
+  
+ //Added Step 4 Random Number
+ Random random = new Random();
+ int randomNumber = random.nextInt(16353) + 32;
+            System.out.println("Random Number: " + randomNumber);
+  
+  //Step 5 adding TempConversion, Reversed trimmed string, and random number
+            System.out.print(celsius+trimmedReversedString+randomNumber);
+          }
   }
 }
 
