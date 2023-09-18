@@ -19,6 +19,7 @@ public class Assignment1 {
   "KK    KK     LL            ",
   "KK      KK   LL            ",
   "KK        KK LLLLLLLLLLLLLL",
+  
   };
   for (String line : letterKL) {
           System.out.println(line);
