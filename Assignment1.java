@@ -19,15 +19,12 @@ public class Assignment1 {
   "KK    KK     LL            ",
   "KK      KK   LL            ",
   "KK        KK LLLLLLLLLLLLLL",
-  
+
   };
   for (String line : letterKL) {
           System.out.println(line);
 }
   }
-      
-  
-
 //Start of step 2 Temperature Conversions
 
   public static void main(String[] args) {
@@ -70,7 +67,3 @@ String inputString = scanner.next();
           }
   }
 }
-
-
-
-
